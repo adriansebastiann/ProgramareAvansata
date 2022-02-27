@@ -1,4 +1,4 @@
-package java.Laborator1.Compulsory;
+package project.Laborator1.Compulsory;
 
 /**
  * This class was built to store the constant array of string with languages
