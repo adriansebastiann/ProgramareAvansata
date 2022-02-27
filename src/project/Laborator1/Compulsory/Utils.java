@@ -1,4 +1,4 @@
-package java.Laborator1.Compulsory;
+package project.Laborator1.Compulsory;
 
 public class Utils {
 
