@@ -11,14 +11,25 @@ import java.util.List;
 public class MyList {
     private List<String> list;
 
+    /**
+     * default constructor
+     */
     public MyList() {
         list = new ArrayList<>();
     }
 
+    /**
+     * getter to return the list from th class
+     * @return the list
+     */
     public List<String> getMyList() {
         return list;
     }
 
+    /**
+     * used to add elements to the list
+     * @param element the element which is going to be added to the list
+     */
     public void addElementToList(String element) {
         list.add(element);
     }

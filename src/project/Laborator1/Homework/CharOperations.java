@@ -10,33 +10,6 @@ import static java.lang.Integer.parseInt;
  * This class is used for all operations with the params
  */
 public class CharOperations {
-    /**
-     * Here we have the data members, the numbers of words  to generate
-     * The number of letters of each word#
-     * The letters transmitted as parameters
-     */
-    public static int p;
-    public static int n;
-    public static String letters;
-
-    /**
-     * A default constructor
-     */
-    public CharOperations() {
-        this.p = 0;
-        this.n = 0;
-        this.letters = null;
-    }
-
-    /**
-     * This a constructor that takes the params and assign the values to the members
-     * @param params these are the params sent to the main method
-     */
-    public CharOperations(String[] params) {
-        this.n = parseInt(params[0]);
-        this.n = parseInt(params[0]);
-        letters = getLettersFromParams(params);
-    }
 
     /**
      * This method takes the letters from params and generate a string which will be used to generate random strings
@@ -56,7 +29,7 @@ public class CharOperations {
      * This method generates a random word of p letters and returns it
      * @return the random generated word
      */
-    public static String randomWord() {
+    public static String randomWord(String letters, int p) {
         StringBuilder stringBuilder = new StringBuilder(p);
         for (int i = 0; i < p; i++) {
             int index = (int)(letters.length() * Math.random());
@@ -69,10 +42,10 @@ public class CharOperations {
      * This method generates n random words of length p
      * @return The list containing the generated words
      */
-    public static List<String> randomWords() {
+    public static List<String> randomWords(String letters, int n, int p) {
         List<String> words = new ArrayList<>();
         for(int index = 0; index < n; index ++) {
-            words.add(sortString(randomWord()));
+            words.add(sortString(randomWord(letters, p)));
         }
         return words;
     }
