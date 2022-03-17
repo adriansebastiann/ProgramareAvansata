@@ -1,4 +1,4 @@
-# Laboratory 2
+# Laboratory 3
 
 ## &#9745; Compulsory
 Compulsory part of first laboratory is ready.
