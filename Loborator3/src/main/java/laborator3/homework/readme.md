@@ -18,3 +18,6 @@ Compulsory part of first laboratory is ready.
 * - [x] In addition to the time cost, each link between two network nodes has a probability of failure. You may want to read this.
 * - [x] Implement an efficient agorithm to determine the safest route for a packet to travel between two given nodes.
 * - [ ] Generate random network instances with known optimum and test your algorithm using JUnit or other framework.
+
+![image](https://user-images.githubusercontent.com/79217003/158810756-bee0c524-eb98-48a8-8b5a-a5df00889267.png)
+
