@@ -1,7 +1,7 @@
-package Laborator3.Compulsory.Model;
+package laborator3.compulsory.model;
 
-import Laborator3.Compulsory.Interfaces.Identifiable;
-import Laborator3.Compulsory.Interfaces.Storage;
+import laborator3.compulsory.interfaces.Identifiable;
+import laborator3.compulsory.interfaces.Storage;
 
 /**
  * Created by Alexoaie Adrian Sebastian
@@ -13,19 +13,22 @@ import Laborator3.Compulsory.Interfaces.Storage;
 public class Computer extends Node implements Identifiable, Storage {
     private String ipAddress;
     private double storageCapacity;
+    private int orderNumber;
 
     public Computer(String hardwareAddress, String locationOnTheMap, String name, String ipAddress, double storageCapacity) {
         super(hardwareAddress, locationOnTheMap, name);
         this.ipAddress = ipAddress;
         this.storageCapacity = storageCapacity;
+        this.orderNumber = super.counter;
     }
 
     public Computer() {
+        this.orderNumber = super.counter;
     }
 
     @Override
     public String toString() {
-        return "V" + super.counter + " (Computer " + super.getName() + ") ";
+        return "V" + this.orderNumber + " (Computer " + super.getName() + ") ";
     }
 
     @Override

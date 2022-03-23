@@ -1,4 +1,4 @@
-package Laborator3.Compulsory.Model;
+package laborator3.compulsory.model;
 
 /**
  * Created by Alexoaie Adrian Sebastian

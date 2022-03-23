@@ -1,4 +1,4 @@
-package Laborator3.Compulsory.Interfaces;
+package laborator3.compulsory.interfaces;
 
 /**
  * Created by Alexoaie Adrian Sebastian

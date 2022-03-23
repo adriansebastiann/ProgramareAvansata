@@ -40,7 +40,7 @@ public class Main {
         System.out.println(network);
         network.printNetwork();
 
-        System.out.println("The storage converted from GB tu b is: " + c1.convertStorage(UnitsOfStorage.BYTE));
+        System.out.println("The storage converted from GB to b is: " + c1.convertStorage(UnitsOfStorage.BYTE));
 
         System.out.println("The sorted list of identifiable nodes is: " + network.returnListOfIdentifiableObjects());
 

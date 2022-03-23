@@ -9,6 +9,7 @@ import java.util.List;
  * Using the index from list of word and the index of the MyList array we know the neighbors of every word
  */
 public class MyList {
+    String
     private List<String> list;
 
     /**

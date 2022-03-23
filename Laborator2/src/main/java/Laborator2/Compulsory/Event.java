@@ -5,6 +5,7 @@ package Laborator2.Compulsory;
  * The event class has its attributes, setters and getters, two constructors and overrides the toString method
  */
 public class Event {
+    private String eventID;
     private String eventName;
     private int numberOfParticipants;
     private MyHour startHour;
@@ -17,11 +18,12 @@ public class Event {
         this.endHour = new MyHour(2, 30);
     }
 
-    public Event(String eventName, int numberOfParticipants, MyHour startHour, MyHour endHour) {
+    public Event(String eventName, int numberOfParticipants, MyHour startHour, MyHour endHour, String eventID) {
         this.eventName = eventName;
         this.numberOfParticipants = numberOfParticipants;
         this.startHour = startHour;
         this.endHour = endHour;
+        this.eventID = eventID;
     }
 
     @Override
@@ -31,6 +33,7 @@ public class Event {
                 ", numberOfParticipants=" + numberOfParticipants +
                 ", startHour=" + startHour +
                 ", endHour=" + endHour +
+                ", event ID=" + eventID +
                 '}';
     }
 
@@ -66,4 +69,11 @@ public class Event {
         this.endHour = endHour;
     }
 
+    public String getEventID() {
+        return eventID;
+    }
+
+    public void setEventID(String eventID) {
+        this.eventID = eventID;
+    }
 }

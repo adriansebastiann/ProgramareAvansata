@@ -1,5 +1,9 @@
 package compulsory;
 
+/**
+ * Class describing the Street Object
+ */
+
 public class Street {
     private String name;
     private int length;
