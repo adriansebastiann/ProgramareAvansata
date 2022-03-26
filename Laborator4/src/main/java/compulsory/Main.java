@@ -7,7 +7,10 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
+
         Intersection dummy = new Intersection("1");
+
+        //create a LinkedList for streets
         List<Street> streets = new LinkedList<>();
         streets.add(new Street("Soarelui", 10, dummy, new Intersection("2")));
         streets.add(new Street("Iernii", 15, new Intersection("3"), new Intersection("4")));
@@ -34,7 +37,6 @@ public class Main {
         for(Intersection intersection : intersections) {
             System.out.print(intersection.getName() + " ");
         }
-
 
         //sort the list of streets by the length
         Collections.sort(streets, Comparator.comparingInt(obj -> obj.getLength()));

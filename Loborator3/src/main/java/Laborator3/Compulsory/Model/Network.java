@@ -1,4 +1,4 @@
-package Laborator3.Compulsory.Model;
+package laborator3.compulsory.model;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -1,6 +1,6 @@
-package Laborator3.Compulsory.Model;
+package laborator3.compulsory.model;
 
-import Laborator3.Compulsory.Interfaces.Identifiable;
+import laborator3.compulsory.interfaces.Identifiable;
 
 /**
  * Created by Alexoaie Adrian Sebastian
@@ -8,21 +8,21 @@ import Laborator3.Compulsory.Interfaces.Identifiable;
  */
 public class Router extends Node implements Identifiable {
     public String ipAddress;
-    private static int counter;
+    private int orderNumber;
 
     public Router(String hardwareAddress, String locationOnTheMap, String name, String ipAddress) {
         super(hardwareAddress, locationOnTheMap, name);
         this.ipAddress = ipAddress;
-        this.counter ++;
+        this.orderNumber = super.counter;
     }
 
     public Router() {
-        this.counter ++;
+        this.orderNumber = super.counter;
     }
 
     @Override
     public String toString() {
-        return "V" + super.counter + " (Router " + super.getName() + ") ";
+        return "V" + this.orderNumber + " (Router " + super.getName() + ") ";
     }
 
     @Override

@@ -7,7 +7,7 @@ import laborator3.homework.constans.UnitsOfStorage;
  * This interface is used for the classes that need to return a storage capacity
  */
 public interface Storage {
-    public double getStorage();
-    public void setStorage(double storageValue);
-    public double convertStorage(UnitsOfStorage unitsOfStorage);
+    double getStorage();
+    void setStorage(double storageValue);
+    double convertStorage(UnitsOfStorage unitsOfStorage);
 }
