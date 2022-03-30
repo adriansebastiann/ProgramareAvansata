@@ -1,19 +1,19 @@
-package compulsory.catalogUtils;
+package compulsoryHomeworkBonus.catalogUtils;
 
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import compulsory.Catalog;
+import compulsoryHomeworkBonus.Catalog;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.stream.Stream;
 
+/**
+ * This class is used to store and get the storage from a file
+ */
 
 public class CatalogStorage {
     public static void saveCatalogToFile(Catalog catalog){
@@ -38,7 +38,7 @@ public class CatalogStorage {
     }
 
     public static Catalog getCatalogFromFile() {
-        String filePath = "C:\\Users\\aditu\\OneDrive\\Desktop\\ProgramareAvansata\\Laborator5\\src\\main\\resources\\catalog.txt";
+        String filePath = "C:/Users/aditu/OneDrive/Desktop/ProgramareAvansata/Laborator5/src/main/resources/catalog.txt";
         String fileContent = readAllBytesJava(filePath);
         Catalog catalog = new Gson().fromJson(fileContent, Catalog.class);
         return catalog;

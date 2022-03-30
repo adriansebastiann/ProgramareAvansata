@@ -1,12 +1,11 @@
-package compulsory;
+package compulsoryHomeworkBonus;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import compulsory.exceptions.IncorrectEntry;
-import compulsory.items.DocumentType;
-import compulsory.items.Item;
-import compulsory.items.LocalItem;
-import compulsory.items.WebItem;
+import compulsoryHomeworkBonus.items.DocumentType;
+import compulsoryHomeworkBonus.items.Item;
+import compulsoryHomeworkBonus.items.LocalItem;
+import compulsoryHomeworkBonus.items.WebItem;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -30,6 +29,10 @@ public class Catalog {
         if (documentType.equals(DocumentType.LOCAL_DOCUMENT)) {
             items.add(gson.fromJson(entry, LocalItem.class));
         }
+    }
+
+    public Item getItemById(Integer index) {
+        return this.items.get(index);
     }
 
     public List<Item> getItems() {
