@@ -1,4 +1,7 @@
-package compulsory.items;
+package compulsoryHomeworkBonus.items;
+
+import java.io.FileNotFoundException;
+import java.net.MalformedURLException;
 
 public abstract class Item {
     private String id;
@@ -77,5 +80,5 @@ public abstract class Item {
                 '}';
     }
 
-    abstract void printItemsContent();
+    abstract public void printItemsContent() throws FileNotFoundException, MalformedURLException;
 }
