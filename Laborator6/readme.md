@@ -2,7 +2,7 @@
 
 ## &#9745; Compulsory
 Compulsory part of the laboratory is ready.
-* - [x] Create the following components:
+Create the following components:
 * - [x] The main frame of the application.
 * - [x] A configuration panel for introducing parameters regarding the grid size and a button for creating a new game. The panel must be placed at the top part of the frame. The panel must contain at least one label and one input component.
 * - [x] A canvas (drawing panel) for drawing the board. Draw the grid lines according to the values specified in the config panel. This panel must be placed in the center part of the frame.
