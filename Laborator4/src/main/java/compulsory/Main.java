@@ -24,7 +24,7 @@ public class Main {
                 new Street("Frunzei", 14, new Intersection("7"), new Intersection("8"))
         );
 
-        //create the list of intersections using stream from the street list
+        //create the list of intersections  using stream from the street list
         List<Intersection> intersections1 = streets.stream()
                 .map(p -> p.getHead())
                 .collect(Collectors.toList());

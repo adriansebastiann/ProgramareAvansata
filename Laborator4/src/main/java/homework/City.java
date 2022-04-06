@@ -33,9 +33,10 @@ public class City {
         }
 
         //add the edges with weight to the graph
-        for (Street street : streets){
-            DefaultWeightedEdge edge = city.addEdge(street.getIntersections().get(0).getName(),street.getIntersections().get(1).getName());
-            city.setEdgeWeight(edge,street.getLength());
+        for (Street street : streets) {
+            DefaultWeightedEdge edge = city.addEdge(street.getIntersections().get(0).getName(),
+                    street.getIntersections().get(1).getName());
+            city.setEdgeWeight(edge, street.getLength());
         }
     }
 
@@ -48,7 +49,7 @@ public class City {
 
     //find the minimum spanning tree using Kruskal algorithm and print the edges
     public void findSolution() {
-        for(DefaultWeightedEdge e: new KruskalMinimumSpanningTree<>(city).getSpanningTree()) {
+        for (DefaultWeightedEdge e : new KruskalMinimumSpanningTree<>(city).getSpanningTree()) {
             System.out.println(e);
         }
     }

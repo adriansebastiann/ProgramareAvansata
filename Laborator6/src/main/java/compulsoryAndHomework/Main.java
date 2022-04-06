@@ -1,10 +1,10 @@
-package compulsory;
+package compulsoryAndHomework;
 
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 
+/**
+ * Here we just created and show the main frame, nothing more to see
+ */
 public class Main {
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
