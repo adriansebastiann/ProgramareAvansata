@@ -18,25 +18,60 @@ Create the following components:
 * - [ ] (+0.5p) Use object serialization in order to save and restore the current status of the game.
 
 
+
+
 This is how the board looks like after initialisation:
+
+
+
 ![image](https://user-images.githubusercontent.com/79217003/162010822-a4e3c32f-2bbb-4441-8c29-5dfff31d81eb.png)
 
 
 Here are some buttons pressed:
+
+
+
 ![image](https://user-images.githubusercontent.com/79217003/162010943-f2b83ce3-cf53-4515-8292-e8afbdd55bb1.png)
 
 
+
+
 This window is displayed when the user presses "Click to see the rules of the game"
+
+
+
 ![image](https://user-images.githubusercontent.com/79217003/162011134-4b2f7c95-8702-47f5-a349-c765f8aca513.png)
 
+
+
+
 This window is displayed when the user presses "First Who Clicks This Wins!!!" Yes, this is my game logic :))
+
+
+
+
+
 ![image](https://user-images.githubusercontent.com/79217003/162011429-5dcb53be-798a-46b2-bcba-632a89d4fe9a.png)
 
 
+
+
 A puzzle minigame appears when the user click on "Play a puzzle instead!". You can click on the image parts and move them until you get the correct image!
+
+
+
 ![image](https://user-images.githubusercontent.com/79217003/162011803-c8edafa8-748c-4778-9986-2a1745103e50.png)
+
+
+
 This is what you should obtain, it's harder than you think :))
+
+
+
 ![image](https://user-images.githubusercontent.com/79217003/162011919-e41df5d5-5916-44d9-9efe-2d226d0a3dbb.png)
+
+
+Bonus points for creativity? Nope? At least I tried :)))
 
 
 
