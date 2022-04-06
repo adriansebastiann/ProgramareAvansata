@@ -1,10 +1,15 @@
-package compulsory;
+package compulsoryAndHomework;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * This class is for the upper part of the frame
+ * I know it's chaotic and OOP principles are not respected, but I don't Think I have ever copied so much code
+ * from the internet for a single project in my life :))))
+ */
 public class ComboBox extends JPanel {
 
     private int rows;
@@ -29,6 +34,7 @@ public class ComboBox extends JPanel {
         heading1.setEditable(false);
         heading2.setEditable(false);
 
+        //the box of values are used to take the dimensions for the board game
         boxOfValue1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

@@ -1,6 +1,6 @@
 package homework;
 
-public class Intersection implements Comparable {
+public class Intersection{
 
     private String name;
 
@@ -21,8 +21,4 @@ public class Intersection implements Comparable {
         return name;
     }
 
-    @Override
-    public int compareTo(Object o) {
-        return this.getName().compareTo(o.toString());
-    }
 }
