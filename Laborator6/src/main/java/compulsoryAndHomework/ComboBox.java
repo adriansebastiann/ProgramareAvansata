@@ -14,18 +14,28 @@ public class ComboBox extends JPanel {
 
     private int rows;
     private int columns;
-    private boolean pressed = false;
-    private int[] values = {4, 5, 6, 7, 8};
-    private JTextField heading1 = new JTextField("Choose the number of rows ");
-    private JTextField heading2 = new JTextField("Choose the number of columns ");
-    private JTextField selectedRows = new JTextField(10);
-    private JTextField selectedColumns = new JTextField(10);
-    private JComboBox boxOfValue1 = new JComboBox();
-    private JComboBox boxOfValue2 = new JComboBox();
-    private JButton createButton = new JButton("Create");
+    private boolean pressed;
+    private int[] values;
+    private JTextField heading1;
+    private JTextField heading2;
+    private JTextField selectedRows;
+    private JTextField selectedColumns;
+    private JComboBox boxOfValue1;
+    private JComboBox boxOfValue2;
+    private JButton createButton;
     private JButton[][] btn;
 
     public ComboBox() {
+        pressed = false;
+        values = new int[]{4, 5, 6, 7, 8};
+        heading1 = new JTextField("Choose the number of rows ");
+        heading2 = new JTextField("Choose the number of columns ");
+        selectedRows = new JTextField(10);
+        selectedColumns = new JTextField(10);
+        boxOfValue1 = new JComboBox();
+        boxOfValue2 = new JComboBox();
+        createButton = new JButton("Create");
+
         for (int i = 0; i < values.length; i++) {
             boxOfValue1.addItem(values[i]);
             boxOfValue2.addItem(values[i]);
