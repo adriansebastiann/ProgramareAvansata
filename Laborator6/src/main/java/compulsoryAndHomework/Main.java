@@ -3,7 +3,7 @@ package compulsoryAndHomework;
 import java.awt.*;
 
 /**
- * Here we just created and show the main frame, nothing more to see
+ * Here it is just created and show the main frame, nothing more to see
  */
 public class Main {
     public static void main(String[] args) {
