@@ -1,4 +1,4 @@
-package Universal;
+package Compulsory;
 
 import lombok.Getter;
 
@@ -37,5 +37,9 @@ public class Bag {
             letters.remove(letters.get(i));
         }
         return extracted;
+    }
+
+    public void fillTheBagWithHomeworksContent() {
+
     }
 }

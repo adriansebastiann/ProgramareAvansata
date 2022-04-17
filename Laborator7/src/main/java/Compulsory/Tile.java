@@ -1,4 +1,4 @@
-package Universal;
+package Compulsory;
 
 import lombok.*;
 
