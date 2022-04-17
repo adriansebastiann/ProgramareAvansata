@@ -1,4 +1,4 @@
-package Universal;
+package Compulsory;
 
 import java.util.Dictionary;
 import java.util.Enumeration;
