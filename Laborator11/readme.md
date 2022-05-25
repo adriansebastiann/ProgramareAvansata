@@ -13,5 +13,5 @@
 * - [x] Create REST services for inserting and reading relationships.
 * - [x] Create a service for determining the first k most popular persons in the network.
 * - [ ] Create a simple client application that invokes the services above, using the support offered by Spring Boot.
-* --> WE TRIED :) [ ] Document your services using Swagger or a similar tool. --> WE TRIED :)
+* --> WE TRIED :) - [ ] Document your services using Swagger or a similar tool. --> WE TRIED :)
 * - [ ] (+1p) Secure your services using the HTTPS protocol and JSON Web Tokens
